@@ -1,5 +1,4 @@
 from sys import argv
-from random import shuffle
 
 script, book, ll = argv
 
@@ -52,8 +51,8 @@ for i in range(2):
 				sections[1+i*2][lineCount].append(w)
 		lineCount+=1
 
-# Rearrange randomly
-shuffle(sections)
+# Rearrange per Burroughs' instructions
+sections.reverse()
 
 # Print result with line breaks
 for i in [0, 2]:
